@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+<!-- NAV FIXO -->
+<div class="bg-white flex flex-wrap items-center fixed w-full top-0 z-50 shadow-xl py-2 px-4">
+    
+    <!-- LOGO -->
+    <a href="#" class="">
+        <img src="img/logo.png" alt="Generic Company" class="h-12" />
+    </a>
+
+    <!-- ICON HAMBURGER  -->
+    <button class="ml-auto md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">
+            <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+        </svg>              
+    </button>
+
+    <!-- MENU -->
+    <nav class="w-full hidden md:block md:w-auto md:ml-auto">
+        <!-- items-center space-x-4 mx-4 -->
+        <ul class="flex flex-col text-center text-2xl text-slate-900/75 space-y-1 my-2 md:flex-row md:space-x-4 md:space-y-0 md:my-0 md:text-base">
+            <li><a href="#funcionalidades" class="inline-block py-2 hover:text-sky-600">Funcionalidades</a></li>
+            <li><a href="#cases" class="inline-block py-2 hover:text-sky-600">Cases</a></li>
+            <li><a href="#planos" class="inline-block py-2 hover:text-sky-600">Planos</a></li>
+            <li><a href="#contato" class="inline-block py-2 hover:text-sky-600">Contato</a></li>
+            <li><a href="#" class="inline-block py-2 px-8 font-semibold rounded-md bg-violet-600 text-white opacity-80 hover:opacity-100">Login</a></li>
+        </ul>
+    </nav>
+
+</div>
+
+<div class="container mx-auto mt-24">
+
+    <!-- HEADER -->
+    <header class="bg-sky-700 mx-2 px-8 py-12 rounded-xl md:bg-[url('img/header.jpg')] md:bg-no-repeat md:bg-right-top">
+        <h1 class="text-white text-4xl md:text-6xl font-extrabold" style="text-shadow: 2px 2px 2px #444;">Poder e Simplicidade</h1>
+        <h2 class="text-slate-50 text-base font-light mt-6" style="text-shadow: 1px 1px 5px #333;">Generic Software é uma plataforma de gestão completa e fácil de usar.<br />Faça um <b>teste grátis</b> e surpreenda-se!</h2>
+    </header>
+
+    <!-- FUNCIONALIDADES -->
+    <section class="pt-20 pb-10" id="funcionalidades">
+        <h2 class="text-center text-4xl font-extrabold">Funcionalidades</h2>
+        <h3 class="text-center text-base mt-2 mb-8 text-slate-600">A plataforma de gestão que vai conquistar sua empresa</h3>
+        
+        <div class="flex flex-col space-y-8 lg:flex-row lg:space-x-8 lg:justify-between lg:space-y-0">
+
+            <!-- MARKETING -->
+            <div class="flex flex-col bg-white rounded-xl shadow-xl basis-1/4 p-4 mx-4 lg:p-8 lg:mx-0">
+                <div class="flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+                    </svg>
+                    <h4 class="text-2xl font-semibold px-2">Marketing</h4>
+                </div>
+                <p class="grow mt-2 text-slate-600 font-light">
+                    Módulo de marketing para ajudar a aumentar o tráfego Módulo de marketing para ajudar a aumentar o tráfego Módulo de marketing para ajudar a aumentar o tráfego, converter mais visitantes e executar campanhas completas de inbound marketing em escala.
+                </p>
+                <button class="self-center w-full py-4 md:py-2 mt-4 font-semibold rounded-md text-sm bg-sky-500 text-white opacity-80 hover:opacity-100">Saiba Mais</button>
+            </div>
+           
+            <!-- SALES -->
+            <div class="flex flex-col bg-white rounded-xl shadow-xl basis-1/4 p-4 mx-4 lg:p-8 lg:mx-0">
+                <div class="flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                    </svg>                  
+                    <h4 class="text-2xl font-semibold px-2">Sales</h4>
+                </div>
+                <p class="grow mt-2 text-slate-600 font-light">
+                    Módulo de vendas que apresenta informações mais profundas sobre seus prospects, automatiza as tarefas que você detesta e fecha mais negócios com mais rapidez.
+                </p>
+                <button class="self-center w-full py-4 md:py-2 mt-4 font-semibold rounded-md text-sm bg-sky-500 text-white opacity-80 hover:opacity-100">Saiba Mais</button>
+            </div>
+
+            <!-- SERVICE -->
+            <div class="flex flex-col bg-white rounded-xl shadow-xl basis-1/4 p-4 mx-4 lg:p-8 lg:mx-0">
+                <div class="flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+                    </svg>                  
+                    <h4 class="text-2xl font-semibold px-2">Service</h4>
+                </div>
+                <p class="grow mt-2 text-slate-600 font-light">
+                    Módulo de atendimento ao cliente para ajudar você a se conectar com clientes, superar suas expectativas e convertê-los em verdadeiros promotores da marca.
+                </p>
+                <button class="self-center w-full py-4 md:py-2 mt-4 font-semibold rounded-md text-sm bg-sky-500 text-white opacity-80 hover:opacity-100">Saiba Mais</button>
+            </div>
+
+            <!-- DASHBOARD -->
+            <div class="flex flex-col bg-white rounded-xl shadow-xl basis-1/4 p-4 mx-4 lg:p-8 lg:mx-0">
+                <div class="flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z" />
+                    </svg>
+                    <h4 class="text-2xl font-semibold px-2">Dashboard</h4>
+                </div>
+                <p class="grow mt-2 text-slate-600 font-light">
+                    Relatórios e gráficos inteligentes, configurados de forma muito fácil, incluindo diversas opções de exportação e integração com outros softwares.
+                </p>
+                <button class="self-center w-full py-4 md:py-2 mt-4 font-semibold rounded-md text-sm bg-sky-500 text-white opacity-80 hover:opacity-100">Saiba Mais</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CASES DE SUCESSO -->
+    <section class="py-20" id="cases">
+        <h2 class="text-center text-4xl font-extrabold">Cases de Sucesso</h2>
+        <h3 class="text-center text-base my-2 text-slate-600">Mais de 500 clientes em todo o Brasil<br />Nossos clientes contam as melhores histórias</h3>
+
+        <div class="flex flex-wrap justify-center space-x-4">
+
+            <a href="#" class="hover:bg-gray-50 flex flex-col items-center mb-4 py-2 rounded-xl">
+                <img src="img/logo-1.png" alt="" class=" w-3/4">
+                <button class="px-4 py-2 font-semibold rounded-md text-sm bg-red-500 text-white">Veja a história</button>
+            </a>
+            <a href="#" class="hover:bg-gray-50 flex flex-col items-center mb-4 py-2 rounded-xl">
+                <img src="img/logo-2.png" alt="" class="w-3/4">
+                <button class="py-2 px-4 font-semibold rounded-md text-sm bg-red-500 text-white">Veja a história</button>
+            </a>
+            <a href="#" class="hover:bg-gray-50 flex flex-col items-center mb-4 py-2 rounded-xl">
+                <img src="img/logo-3.png" alt="" class="w-3/4">
+                <button class="py-2 px-4 font-semibold rounded-md text-sm bg-red-500 text-white">Veja a história</button>
+            </a>
+            <a href="#" class="hover:bg-gray-50 hidden flex flex-col items-center mb-4 py-2 rounded-xl lg:inline-flex">
+                <img src="img/logo-4.png" alt="" class="w-3/4">
+                <button class="py-2 px-4 font-semibold rounded-md text-sm bg-red-500 text-white">Veja a história</button>
+            </a>
+            <a href="#" class="hover:bg-gray-50 hidden flex flex-col items-center mb-4 py-2 rounded-xl lg:inline-flex">
+                <img src="img/logo-5.png" alt="" class="w-3/4">
+                <button class="py-2 px-4 font-semibold rounded-md text-sm bg-red-500 text-white">Veja a história</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- PLANOS -->
+    <section class="bg-sky-100 rounded-xl px-8 py-20 lg:px-20" id="planos">
+        <h1 class="text-center text-4xl text-sky-900 font-extrabold">Planos</h2>
+        <h2 class="text-center text-base text-sky-800 font-light mt-2 mb-8">Escolha o plano ideal para o seu negócio e comece agora a transformação na sua gestão</h3>
+
+        <div class="flex flex-col space-y-8 md:flex-row md:justify-between md:space-x-8 md:space-y-0">
+
+            <div class="flex flex-col basis-1/3 bg-white rounded-xl shadow-xl p-4">
+                <h4 class="text-2xl font-semibold">Free</h4>
+                <p class="my-2 font-medium text-sky-800">Ideal para pequenos negócios</p>
+                <p class="grow text-slate-600 font-light">Lorem ipsum dolor sit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                <button class="w-full mt-4 py-4 md:mt-8 md:py-2 font-semibold rounded-md text-sm bg-violet-600 text-white opacity-80 hover:opacity-100">Comece a usar agora</button>
+            </div>
+
+            <div class="flex flex-col basis-1/3 bg-white rounded-xl shadow-xl p-4">
+                <h4 class="text-2xl font-semibold">Basic</h4>
+                <p class="my-2 font-medium text-sky-800">Ideal para equipes em crescimento</p>
+                <p class="grow text-slate-600 font-light">Lorem ipsum dolor sit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                <button class="w-full mt-4 py-4 md:mt-8 md:py-2 font-semibold rounded-md text-sm bg-violet-600 text-white opacity-80 hover:opacity-100">Comece a usar agora</button>
+            </div>
+
+            <div class="flex flex-col basis-1/3 bg-white rounded-xl shadow-xl p-4">
+                <h4 class="text-2xl font-semibold">Enterprise</h4>
+                <p class="my-2 font-medium text-sky-800">Ideal para grandes empresas</p>
+                <p class="grow text-slate-600 font-light">Lorem ipsum dolor sit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                <button class="w-full mt-4 py-4 md:mt-8 md:py-2 font-semibold rounded-md text-sm bg-violet-600 text-white opacity-80 hover:opacity-100">Fale com o especialista</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="py-10" id="contato">
+        <h2 class="text-center text-4xl font-extrabold mb-8">Fale Conosco</h2>
+
+        <div class="flex flex-col md:flex-row md:justify-between">
+
+            <!-- ENDEREÇO -->
+            <div class="basis-1/2 text-slate-600 text-sm mb-8 px-8 md:px-4 lg:px-16">
+                <p class="my-2"><span class="inline-block w-20 font-bold">Endereço:</span> Rua Lorem Ipsum Dolor, 123, sala 456, Curitiba/PR, 99999-999</p>
+                <p class="my-2"><span class="inline-block w-20 font-bold">Telefone:</span> (41) 9999-9999</p>
+                <p class="my-2"><span class="inline-block w-20 font-bold">Horário:</span> De segunda à sexta, das 8h as 18h</p>
+            </div>
+            
+             <!-- FORM -->
+            <div class="flex basis-1/2 px-8 md:px-2 lg:px-16">
+                
+                <form class="flex flex-col w-full space-y-2" action="" method="post">
+
+                    <div class="flex w-full">
+                        <label class="w-1/4 p-1 font-medium text-slate-600 lg:text-right" for="nome">Nome (*):</label>
+                        <input class="w-3/4 border-solid border border-slate-300 rounded px-2 py-1 font-light" type="text" name="nome" id="nome" />
+                    </div>
+
+                    <div class="flex w-full">
+                        <label class="w-1/4 p-1 font-medium text-slate-600 lg:text-right" for="email">E-mail (*):</label>
+                        <input class="w-3/4 border-solid border border-slate-300 rounded px-2 py-1 font-light text-sm" type="text" name="email" id="email" />
+                    </div>
+
+                    <div class="flex w-full">
+                        <label class="w-1/4 p-1 font-medium text-slate-600 lg:text-right" for="telefone">Telefone:</label>
+                        <input class="w-3/4 border-solid border border-slate-300 rounded px-2 py-1 font-light text-sm" type="text" name="telefone" id="telefone" />
+                    </div>
+
+                    <div class="flex w-full">
+                        <label class="w-1/4 p-1 font-medium text-slate-600 lg:text-right" for="assunto">Assunto:</label> 
+                        <select class="w-3/4 border-solid border border-slate-300 rounded" name="assunto" id="assunto">
+                            <option value=""></option>
+                            <option value="1">Opção 1</option>
+                            <option value="2">Opção 2</option>
+                            <option value="3">Opção 3</option>
+                        </select>
+                    </div>
+
+                    <div class="flex w-full">
+                        <label class="w-1/4 p-1 font-medium text-slate-600 lg:text-right" for="msg">Mensagem:</label> 
+                        <textarea class="w-3/4 border-solid border border-slate-300 rounded px-2 py-1 font-light text-sm" rows="4" name="msg" id="msg"></textarea>
+                    </div>
+
+                    <div class="grid w-full justify-items-end">
+                        <button class="w-3/4 py-4 font-semibold rounded-md text-base bg-sky-500 text-white opacity-80 hover:opacity-100">Enviar</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="bg-sky-100 py-10 text-sky-800 font-light text-xs opacity-80 text-center">
+    Generic Company @ 2022
+    </footer>    
+
+</div>
+
+</body>
+</html>
